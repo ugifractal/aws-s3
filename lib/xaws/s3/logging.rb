@@ -1,4 +1,4 @@
-module AWS
+module XAWS
   module S3
     # A bucket can be set to log the requests made on it. By default logging is turned off. You can check if a bucket has logging enabled:
     # 

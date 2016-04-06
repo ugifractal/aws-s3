@@ -1,4 +1,4 @@
-module AWS
+module XAWS
   module S3
     
     # Abstract super class of all AWS::S3 exceptions

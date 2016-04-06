@@ -1,4 +1,4 @@
-module AWS
+module XAWS
   module S3
     # Anything you do that makes a request to S3 could result in an error. If it does, the AWS::S3 library will raise an exception 
     # specific to the error. All exception that are raised as a result of a request returning an error response inherit from the 

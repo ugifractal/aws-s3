@@ -1,4 +1,4 @@
-module AWS
+module XAWS
   module S3
     # The service lets you find out general information about your account, like what buckets you have. 
     # 
