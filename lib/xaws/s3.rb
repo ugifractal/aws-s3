@@ -65,6 +65,8 @@ require_library_or_gem 'xmlsimple', 'xml-simple' unless defined? XmlSimple
 # If libxml is installed, we use the FasterXmlSimple library, that provides most of the functionality of XmlSimple
 # except it uses the xml/libxml library for xml parsing (rather than REXML). If libxml isn't installed, we just fall back on
 # XmlSimple.
+XAWS::S3::Parsing.parser = XmlSimple
+=begin
 XAWS::S3::Parsing.parser =
   begin
     require_library_or_gem 'xml/libxml'
@@ -77,3 +79,4 @@ XAWS::S3::Parsing.parser =
   rescue LoadError
     XmlSimple
   end
+=end
