@@ -6,4 +6,5 @@ Gem::Specification.new do |s|
   s.description = "this is a fork of aws s3 library to change namespace to xaws"
   s.version = "0.6.3"
   s.summary = "xaws-s3"
+  s.add_runtime_dependency("xml-simple")
 end
