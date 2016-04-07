@@ -138,7 +138,7 @@ module XAWS
       end
   
       def initialize(start)
-        @container     = AWS::S3
+        @container     = XAWS::S3
         @current_class = start
       end
   
