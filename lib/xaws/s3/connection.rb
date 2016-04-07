@@ -8,7 +8,7 @@ module XAWS
         
         def prepare_path(path)
           path = path.remove_extended unless path.valid_utf8?
-          AWS::S3.escape_uri(path)
+          XAWS::S3.escape_uri(path)
         end
       end
       
@@ -239,7 +239,7 @@ module XAWS
             end
 
             def default_connection_name
-              'AWS::S3::Base'
+              'XAWS::S3::Base'
             end
 
             def default_connection
